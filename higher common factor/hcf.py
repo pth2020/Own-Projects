@@ -16,7 +16,10 @@ def find_hcf(a, b):
         hcf = a
         
     return hcf
-
-first_number = int(input("Enter first number: "))
-second_number = int(input("Enter second number: "))
+try:
+    first_number = int(input("Enter first number: "))
+    second_number = int(input("Enter second number: "))
+except ValueError:
+    print("Invalid input")
+    
 print(f"The hcf of {first_number} and {second_number} is {find_hcf(first_number,second_number)}")
